@@ -1,38 +1,40 @@
+import '../styles/projects.css'
+
+const images = [
+    "https://images.unsplash.com/photo-1702069176442-6f9b26138cf2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8",
+    "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8",
+    "https://images.unsplash.com/photo-1702016049560-3d3f27b0071e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+    "https://plus.unsplash.com/premium_photo-1700567964045-cd9d98d7bd2e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8",
+    "https://images.unsplash.com/photo-1701930873285-74a87bdefa87?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8"
+]
+
 export default function Projects() {
+
     return (
-        <div className="bg-red-400">
-            Projects
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>12</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-            <p>23</p>
-            <p>24</p>
-            <p>25</p>
-            <p>26</p>
-            <p>27</p>
-            <p>28</p>
-            <p>29</p>
-            <p>30</p>
-            <p>31</p>
+        <div className="p-3 grid gap-5 grid-cols-2 pb-16">
+            {images.length > 0 && (
+                images.map((image, index) => (
+                    <div key={index}>
+                        <div
+                            className="image-container"
+                        >
+                            <div
+                                className="overlay"
+                            >
+                                <span className="text-sm font-medium">scsc</span>
+                            </div>
+                            <img
+                                src={image}
+                                alt={`Project ${index}`}
+                                className="image z-10"
+                            />
+                        </div>
+                        <span className="text-sm ml-[10px]">Titulo {index} - Descripcion</span>
+                    </div>
+                ))
+            )}
+
+            {images.length === 0 && <span className='font-bold text-base'>En construcción: ¡próximamente nuevos proyectos!</span>}
         </div>
     )
 }
