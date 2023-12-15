@@ -1,14 +1,16 @@
 export interface ProjectResponse {
-    projects: ProjectItem[];
+    numOfProjets:number,
+    projects: ProjectItems[];
 }
 
-export interface ProjectItem {
+export interface ProjectItems {
     id: number;
     imagen: string;
     nombre: string;
     alt: string;
     titulo: string;
     description: string;
+    descriptionAbrev: string;
     frontend: Frameworks[];
     backend: Frameworks[];
 }
