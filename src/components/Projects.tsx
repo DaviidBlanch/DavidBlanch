@@ -1,40 +1,62 @@
-import '../styles/projects.css'
-
-const images = [
-    "https://images.unsplash.com/photo-1702069176442-6f9b26138cf2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8",
-    "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8",
-    "https://images.unsplash.com/photo-1702016049560-3d3f27b0071e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
-    "https://plus.unsplash.com/premium_photo-1700567964045-cd9d98d7bd2e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8",
-    "https://images.unsplash.com/photo-1701930873285-74a87bdefa87?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8"
-]
+import { useEffect, useState } from 'react';
+import { ProjectResponse, Frameworks, ProjectItem } from '../interfaces/projects';
+import '../styles/projects.css';
 
 export default function Projects() {
 
+    const [project, setProject] = useState<ProjectItem[]>()
+
+    useEffect(() => {
+        fetch('https://run.mocky.io/v3/7fcb425f-a96d-4ac9-9fb8-113f758be1d1')
+            .then(response => response.json())
+            .then((data: ProjectResponse) => {
+                if (!data) return
+                setProject(data.projects)
+            })
+            .catch(error => console.error(error))
+    }, [])
+
     return (
         <div className="p-3 grid gap-5 grid-cols-2 pb-16">
-            {images.length > 0 && (
-                images.map((image, index) => (
-                    <div key={index}>
+            {
+                project?.map((pro: ProjectItem) => (
+                    <div key={pro.id}>
                         <div
                             className="image-container"
                         >
-                            <div
-                                className="overlay"
-                            >
-                                <span className="text-sm font-medium">scsc</span>
-                            </div>
                             <img
-                                src={image}
-                                alt={`Project ${index}`}
-                                className="image z-10"
+                                src="../assets/project-logos/devQ.webp"
+                                alt={pro.alt}
+                                loading="eager"
+                                className="image z-10 rounded-lg"
                             />
+                            <div className="overlay grid grid-rows-2 p-2">
+                                <div className="p-3">
+                                    <p className="text-base font-medium mb-2">Front-end</p>
+                                    <div className='flex items-center [&>img]:m-0 gap-3'>
+                                        {
+                                            pro.frontend.map((front: Frameworks) => (
+                                                <img key={front.id} src={front.imagen} alt={front.alt} loading="lazy" className="w-12 h-12 mx-2" />
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                                <div className="p-3 pt-0">
+                                    <p className="text-base font-medium mb-2">Back-end</p>
+                                    <div className='flex items-center [&>img]:m-0 gap-3'>
+                                        {
+                                            pro.backend.map((back: Frameworks) => (
+                                                <img key={back.id} src={back.imagen} alt={back.alt} loading="lazy" className="w-12 h-12 mx-2" />
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <span className="text-sm ml-[10px]">Titulo {index} - Descripcion</span>
+                        <span className="text-sm ml-[10px]">{pro.titulo} - {pro.description}</span>
                     </div>
                 ))
-            )}
-
-            {images.length === 0 && <span className='font-bold text-base'>En construcción: ¡próximamente nuevos proyectos!</span>}
+            }
         </div>
     )
 }

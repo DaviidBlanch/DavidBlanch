@@ -1,26 +1,105 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "imagen": "/assets/logos/React-logo.webp",
-            "nombre": "React Js",
-            "alt": "Logo de React",
-            "titulo": "Logo de React"
-        },
-        {
-            "id": 2,
-            "imagen": "/assets/logos/Typescript-logo.webp",
-            "nombre": "TypeScript",
-            "alt": "Logo de TypeScript",
-            "titulo": "Logo de TypeScript"
-        },
-        {
-            "id": 3,
-            "imagen": "/assets/logos/GitHub-logo.webp",
-            "nombre": "GitHub",
-            "alt": "Logo de GitHub",
-            "titulo": "Logo de GitHub"
-        }
-    ],
-    "numberOfProjects": 3
+	"projects": [
+		{
+			"id": 1,
+			"imagen": "../assets/project-logos/devQ.webp",
+			"nombre": "devQ",
+			"alt": "devQ logo",
+			"titulo": "devQ",
+			"description": "Website for technical interview questions and interviews for the developer world",
+			"frontend": [
+				{
+					"id": 1,
+					"nombre": "ReactJs",
+					"imagen": "../assets/frameworks-logos/React-logo.webp",
+					"alt": "ReactJs logo",
+					"titulo": "ReactJs"
+				},
+				{
+					"id": 2,
+					"nombre": "TypeScript",
+					"imagen": "../assets/frameworks-logos/Typescript-logo.webp",
+					"alt": "TypeScript logo",
+					"titulo": "TypeScript"
+				},
+				{
+					"id": 3,
+					"nombre": "TailwindCss",
+					"imagen": "../assets/frameworks-logos/Tailwind-logo.webp",
+					"alt": "TailwindCss logo",
+					"titulo": "TailwindCss"
+				}
+			],
+			"backend": [
+				{
+					"id": 1,
+					"nombre": "NodeJs",
+					"imagen": "../assets/frameworks-logos/Node-logo.webp",
+					"alt": "NodeJs logo",
+					"titulo": "NodeJs"
+				},
+				{
+					"id": 2,
+					"nombre": "ExpressJs",
+					"imagen": "../assets/frameworks-logos/Express-logo.webp",
+					"alt": "ExpressJs logo",
+					"titulo": "ExpressJs"
+				},
+				{
+					"id": 3,
+					"nombre": "MongoDB",
+					"imagen": "../assets/frameworks-logos/Mongo-logo.webp",
+					"alt": "MongoDB logo",
+					"titulo": "MongoDB"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"imagen": "../assets/project-logos/4day.webp",
+			"nombre": "4day",
+			"alt": "4day logo",
+			"titulo": "4day",
+			"description": "Professional social network to promote temporary contracts and increase employability in the hospitality sector.",
+			"frontend": [
+				{
+					"id": 1,
+					"nombre": "ReactJs",
+					"imagen": "../assets/frameworks-logos/React-logo.webp",
+					"alt": "ReactJs logo",
+					"titulo": "ReactJs"
+				},
+				{
+					"id": 2,
+					"nombre": "TailwindCss",
+					"imagen": "../assets/frameworks-logos/Tailwind-logo.webp",
+					"alt": "TailwindCss logo",
+					"titulo": "TailwindCss"
+				}
+			],
+			"backend": [
+				{
+					"id": 3,
+					"nombre": "NodeJs",
+					"imagen": "../assets/frameworks-logos/Node-logo.webp",
+					"alt": "NodeJs logo",
+					"titulo": "NodeJs"
+				},
+				{
+					"id": 4,
+					"nombre": "ExpressJs",
+					"imagen": "../assets/frameworks-logos/Express-logo.webp",
+					"alt": "ExpressJs logo",
+					"titulo": "ExpressJs"
+				},
+				{
+					"id": 5,
+					"nombre": "MongoDB",
+					"imagen": "../assets/frameworks-logos/Mongo-logo.webp",
+					"alt": "MongoDB logo",
+					"titulo": "MongoDB"
+				}
+			]
+		}
+	]
 }
