@@ -1,11 +1,11 @@
 nav a.isActive {
-    color: #fb5eff;
+    color: #0077B5;
     font-size: 96px;
     line-height: 1;
 }
 
 .is-active {
-    color: #fb5eff;
+    color: #0077B5;
 }
 
 /* Animación del lineado del Header */
@@ -37,4 +37,30 @@ nav a.isActive {
     .underline-animation {
         transition: none;
     }
+}
+
+/* Animacion header logo  */
+
+.logo-container::before,
+.logo-container::after {
+    content: '{';
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo-container::after {
+    content: '}';
+    left: auto;
+    right: 0;
+}
+
+.logo-container:hover::before,
+.logo-container:hover::after {
+    opacity: 1;
+}
+
+.logo:hover{
+    color: #0077B5;
 }

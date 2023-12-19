@@ -1,25 +1,48 @@
+import CapgeminiLogo from '../assets/empresa-logos/capgemini_logo.jpg'
+import '../styles/experiences.css'
+
 export default function Experiences() {
     return (
-        <div className="p-3 pl-10">
-           Capgemini
-            <ol className="relative border-s border-black dark:border-gray-700 ml-2">
-                <li className="mb-10 ms-4">
-                    <div className="absolute w-3 h-3 bg-[#0077B5] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+        <div className="p-2 pl-10">
+            <div className='flex'>
+                <a
+                    href='https://www.capgemini.com/es-es/'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='flex items-center'
+                >
+                    <span className='underline-animation'>Capgemini</span>
+                    <img
+                        src={CapgeminiLogo}
+                        alt='Capgemini logo'
+                        className='h-9 w-9 ml-2'
+                    />
+                </a>
+            </div>
+            <ol className="relative border-s border-black ml-2">
+                <li className="mb-5 ms-4">
+                    <div className="pulser absolute w-3 h-3 bg-[#0077B5] rounded-full mt-1.5 -start-1.5 border"></div>
+                    <h3 className="text-lg text-black">Junior Software Engineer</h3>
+                    <time className="mb-1 font-serif text-sm leading-none text-gray-600">march 2023 - present · 10 months</time>
+                    <p className="text-base font-sans text-black">•Incident management and Small Works/Tasks in Aarhus, Denmark <span className='font-semibold'>(React, TypeScript)</span>.</p>
+                    <p className="text-base font-sans text-black">•Internal project development <span className='font-semibold'>(Angular, GitLab)</span> .</p>
+
                 </li>
-                <li className="mb-10 ms-4">
-                    <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                <li className="mb-5 ms-4">
+                    <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                    <h3 className="text-lg text-black">Junior Software Engineer</h3>
+                    <time className="mb-1 font-serif text-sm leading-none text-gray-600">july 2023 - october 2023 · 3 months</time>
+                    <p className="text-base font-sans text-black">•Incident management and Small Works/Tasks in Aarhus, Denmark <span className='font-semibold'>(React, TypeScript)</span>.</p>
                 </li>
                 <li className="ms-4">
-                    <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                    <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                    <h3 className="text-lg text-black">Cloud & Custom Applications Intern</h3>
+                    <time className="mb-1 font-serif text-sm leading-none text-gray-600">june 2022 - december 2022 · 7 months</time>
+                    <p className="text-base font-sans text-black">•Web development using SQL developer, Java and JavaScript.</p>
+                    <p className="text-base font-sans text-black">•CRUD in React and Angular.</p>
+                    <p className="text-base font-sans text-black">•Git management.</p>
+                    <p className="text-base font-sans text-black">•Activity management in JIRA.</p>
+                    <p className="text-base font-sans text-black">•Massive data insertion in PostgreSQL.</p>
                 </li>
             </ol>
         </div>

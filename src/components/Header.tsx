@@ -7,10 +7,10 @@ import { Linkedin } from '../assets/socialNetwork-logos/LinkedIn'
 export default function Header() {
     return (
         <header className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-30">
-            <div className="flex flex-grow basis-0 text-2xl font-bold">
-                {'{'}
-                <NavLink to="/"><span className="px-1 logo">David Blanch</span></NavLink>
-                {'}'}
+            <div className="flex flex-grow basis-0 text-2xl">
+                <NavLink to="/" className="logo-container">
+                    <span className="px-1 logo font-bold">David Blanch</span>
+                </NavLink>
             </div>
             <nav className="flex flex-grow justify-center">
                 <ul className="flex [&>li>a]:font-medium gap-10">
@@ -30,7 +30,6 @@ export default function Header() {
                         href='https://github.com/DaviidBlanch'
                         target='_blank'
                         rel='noreferrer'
-                        className=''
                     >
                         <img
                             src={GitHub}

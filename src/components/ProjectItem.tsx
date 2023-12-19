@@ -20,7 +20,7 @@ export default function ProjectItem({ id, imagen, alt, titulo, descriptionAbrev 
                     {/* Aqui va algo */}
                 </div>
             </div>
-            <span className="text-sm ml-[10px]">{titulo} - {descriptionAbrev}</span>
+            <span className="text-base font-medium font-sans ml-[10px]">{titulo} - {descriptionAbrev}</span>
         </div>
     )
 }
