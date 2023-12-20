@@ -2,7 +2,6 @@ import '../styles/navegation.css'
 import { NavLink } from 'react-router-dom'
 
 import GitHub from '../assets/socialNetwork-logos/GitHub-logo.webp'
-import { Linkedin } from '../assets/socialNetwork-logos/LinkedIn'
 
 export default function Header() {
     return (
@@ -33,7 +32,7 @@ export default function Header() {
                     >
                         <img
                             src={GitHub}
-                            alt='Github'
+                            alt='Github logo'
                             className='w-full h-6 hover:scale-110 transition-transform duration-300'
                         />
                     </a></li>
@@ -42,7 +41,11 @@ export default function Header() {
                         target='_blank'
                         rel='noreferrer'
                     >
-                        <Linkedin />
+                        <img
+                            src='src/assets/socialNetwork-logos/LinkedIn.svg'
+                            alt='LinkedIn logo'
+                            className='w-full h-6 hover:scale-110 transition-transform duration-300'
+                        />
                     </a></li>
                 </ul>
             </nav>

@@ -11,8 +11,9 @@
 
 @font-face {
     font-family: 'Memesique';
-    src: url('./fonts/Memesique-Regular.ttf');
+    src: url('./fonts/Memesique-Regular.woff2') format("woff2");
     font-weight: bold;
+    font-display: swap;
 }
 
 ::-webkit-scrollbar {

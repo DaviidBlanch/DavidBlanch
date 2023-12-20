@@ -7,7 +7,6 @@
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 20%;
-    /* cursor: pointer; */
 }
 
 .overlay {
