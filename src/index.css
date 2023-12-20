@@ -6,8 +6,13 @@
 
 :root {
     background-color: #edece8;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: memesique;
+}
+
+@font-face {
+    font-family: 'Memesique';
+    src: url('./fonts/Memesique-Regular.ttf');
+    font-weight: bold;
 }
 
 ::-webkit-scrollbar {

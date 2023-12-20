@@ -9,7 +9,7 @@ export default function Header() {
         <header className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-30">
             <div className="flex flex-grow basis-0 text-2xl">
                 <NavLink to="/" className="logo-container">
-                    <span className="px-1 logo font-bold">David Blanch</span>
+                    <span className="px-1 logo font-bold">DAVID BLANCH</span>
                 </NavLink>
             </div>
             <nav className="flex flex-grow justify-center">
@@ -18,14 +18,14 @@ export default function Header() {
                         className={({ isActive }) => {
                             return isActive ? 'is-active' : undefined
                         }} to="/about"
-                    ><span className="underline-animation">About</span></NavLink></li>
+                    ><span className="underline-animation">ABOUT</span></NavLink></li>
                     <li>
                         <NavLink
                             className={({ isActive }) => {
                                 return isActive ? 'is-active' : undefined
                             }}
                             to="/contactMe"
-                        ><span className="underline-animation">Contact Me</span></NavLink></li>
+                        ><span className="underline-animation">CONTACT ME</span></NavLink></li>
                     <li><a
                         href='https://github.com/DaviidBlanch'
                         target='_blank'
