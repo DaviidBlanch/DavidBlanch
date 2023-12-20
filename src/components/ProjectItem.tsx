@@ -7,7 +7,7 @@ export default function ProjectItem({ id, imagen, alt, titulo, descriptionAbrev 
     return (
         <div key={id}>
             <div
-                className="image-container"
+                className="image-container rounded-lg shadow-lg shadow-zinc-600"
             >
                 <picture>
                     <img

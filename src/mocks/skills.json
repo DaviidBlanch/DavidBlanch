@@ -1,0 +1,60 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "nombre": "ReactJs",
+            "progreso": "70%",
+            "color": "#087EA4",
+            "src": "src/assets/frameworks-logos/React.svg",
+            "alt": "ReactJs logo"
+        },
+        {
+            "id": 2,
+            "nombre": "TypeScript",
+            "progreso": "70%",
+            "color": "#3178c6",
+            "src": "src/assets/frameworks-logos/TypeScript.svg",
+            "alt": "TypeScript logo"
+        },
+        {
+            "id": 3,
+            "nombre": "Angular",
+            "progreso": "60%",
+            "color": "#d32f2f",
+            "src": "src/assets/frameworks-logos/Angular.svg",
+            "alt": "Angular logo"
+        },
+        {
+            "id": 4,
+            "nombre": "TailwindCss",
+            "progreso": "60%",
+            "color": "#38bdf8",
+            "src": "src/assets/frameworks-logos/TailwindCss.svg",
+            "alt": "TailwindCss logo"
+        },
+        {
+            "id": 5,
+            "nombre": "NodeJs",
+            "progreso": "50%",
+            "color": "#026E00",
+            "src": "src/assets/frameworks-logos/Node.svg",
+            "alt": "NodeJs logo"
+        },
+        {
+            "id": 6,
+            "nombre": "ExpressJs",
+            "progreso": "50%",
+            "color": "#353535",
+            "src": "src/assets/frameworks-logos/Express.svg",
+            "alt": "ExpressJs logo"
+        },
+        {
+            "id": 7,
+            "nombre": "MongoDB",
+            "progreso": "50%",
+            "color": "#42494f",
+            "src": "src/assets/frameworks-logos/MongoDb.svg",
+            "alt": "MongoDB logo"
+        }
+    ]
+}

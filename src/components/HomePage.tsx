@@ -3,7 +3,7 @@ import ContactMe from "./ContactMe";
 import Experiences from "./Experiences"
 import Navegation from "./Navegation"
 import Projects from "./Projects"
-import Studies from "./Studies"
+import Skills from "./Skills"
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ export default function HomePage() {
                 <Routes>
                     <Route path="/" element={<Projects />} />
                     <Route path="/experiences" element={<Experiences />} />
-                    <Route path="/studies" element={<Studies />} />
+                    <Route path="/skills" element={<Skills />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contactMe" element={<ContactMe />} />
                 </Routes>

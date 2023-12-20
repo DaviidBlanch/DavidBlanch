@@ -1,5 +1,5 @@
 export interface ProjectResponse {
-    numOfProjets:number,
+    numOfProjets: number,
     projects: ProjectItems[];
 }
 
