@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ProjectResponse, ProjectItems } from '../interfaces/projects';
 import ProjectItem from './ProjectItem';
 
-const URL_PROJECTS = 'https://run.mocky.io/v3/d190249c-330a-4322-bc3c-78c7052097ce'
+const URL_PROJECTS = 'https://run.mocky.io/v3/a31d88cf-e439-45ff-b3e2-eb7e89abf0a7'
 
 export default function Projects() {
 

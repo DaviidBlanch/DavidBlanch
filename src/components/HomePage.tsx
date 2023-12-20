@@ -1,4 +1,3 @@
-import About from "./About";
 import ContactMe from "./ContactMe";
 import Experiences from "./Experiences"
 import Navegation from "./Navegation"
@@ -15,7 +14,6 @@ export default function HomePage() {
                     <Route path="/" element={<Projects />} />
                     <Route path="/experiences" element={<Experiences />} />
                     <Route path="/skills" element={<Skills />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/contactMe" element={<ContactMe />} />
                 </Routes>
             </section>

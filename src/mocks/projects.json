@@ -12,47 +12,35 @@
 			"frontend": [
 				{
 					"id": 1,
-					"nombre": "ReactJs",
-					"imagen": "src/assets/frameworks-logos/React-logo.webp",
-					"alt": "ReactJs logo",
-					"titulo": "ReactJs"
+					"nombre": "ReactJS",
+					"color": "#087EA4"
 				},
 				{
 					"id": 2,
 					"nombre": "TypeScript",
-					"imagen": "src/assets/frameworks-logos/Typescript-logo.webp",
-					"alt": "TypeScript logo",
-					"titulo": "TypeScript"
+					"color": "#3178c6"
 				},
 				{
 					"id": 3,
-					"nombre": "TailwindCss",
-					"imagen": "src/assets/frameworks-logos/Tailwind-logo.webp",
-					"alt": "TailwindCss logo",
-					"titulo": "TailwindCss"
+					"nombre": "TailwindCSS",
+					"color": "#38bdf8"
 				}
 			],
 			"backend": [
 				{
 					"id": 1,
-					"nombre": "NodeJs",
-					"imagen": "src/assets/frameworks-logos/Node-logo.webp",
-					"alt": "NodeJs logo",
-					"titulo": "NodeJs"
+					"nombre": "NodeJS",
+					"color": "#026E00"
 				},
 				{
 					"id": 2,
-					"nombre": "ExpressJs",
-					"imagen": "src/assets/frameworks-logos/Express-logo.webp",
-					"alt": "ExpressJs logo",
-					"titulo": "ExpressJs"
+					"nombre": "ExpressJS",
+					"color": "#353535"
 				},
 				{
 					"id": 3,
 					"nombre": "MongoDB",
-					"imagen": "src/assets/frameworks-logos/Mongo-logo.webp",
-					"alt": "MongoDB logo",
-					"titulo": "MongoDB"
+					"color": "#42494f"
 				}
 			]
 		},
@@ -67,40 +55,30 @@
 			"frontend": [
 				{
 					"id": 1,
-					"nombre": "ReactJs",
-					"imagen": "src/assets/frameworks-logos/React-logo.webp",
-					"alt": "ReactJs logo",
-					"titulo": "ReactJs"
+					"nombre": "ReactJS",
+					"color": "#087EA4"
 				},
 				{
 					"id": 2,
-					"nombre": "TailwindCss",
-					"imagen": "src/assets/frameworks-logos/Tailwind-logo.webp",
-					"alt": "TailwindCss logo",
-					"titulo": "TailwindCss"
+					"nombre": "TypeScript",
+					"color": "#3178c6"
 				}
 			],
 			"backend": [
 				{
+					"id": 1,
+					"nombre": "NodeJS",
+					"color": "#026E00"
+				},
+				{
+					"id": 2,
+					"nombre": "ExpressJS",
+					"color": "#353535"
+				},
+				{
 					"id": 3,
-					"nombre": "NodeJs",
-					"imagen": "src/assets/frameworks-logos/Node-logo.webp",
-					"alt": "NodeJs logo",
-					"titulo": "NodeJs"
-				},
-				{
-					"id": 4,
-					"nombre": "ExpressJs",
-					"imagen": "src/assets/frameworks-logos/Express-logo.webp",
-					"alt": "ExpressJs logo",
-					"titulo": "ExpressJs"
-				},
-				{
-					"id": 5,
 					"nombre": "MongoDB",
-					"imagen": "src/assets/frameworks-logos/Mongo-logo.webp",
-					"alt": "MongoDB logo",
-					"titulo": "MongoDB"
+					"color": "#42494f"
 				}
 			]
 		}

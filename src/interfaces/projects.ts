@@ -18,7 +18,5 @@ export interface ProjectItems {
 export interface Frameworks {
     id: number;
     nombre: string;
-    imagen: string;
-    alt: string;
-    titulo: string;
+    color: string;
 }

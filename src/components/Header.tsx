@@ -13,11 +13,6 @@ export default function Header() {
             </div>
             <nav className="flex flex-grow justify-center">
                 <ul className="flex [&>li>a]:font-medium gap-10">
-                    <li><NavLink
-                        className={({ isActive }) => {
-                            return isActive ? 'is-active' : undefined
-                        }} to="/about"
-                    ><span className="underline-animation">ABOUT</span></NavLink></li>
                     <li>
                         <NavLink
                             className={({ isActive }) => {
