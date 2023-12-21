@@ -10,7 +10,7 @@ export const NavLink: React.FC<Props> = ({ to, children, ...props }) => {
         <NewNavLink
             to={to}
             className={({ isActive }) => {
-                return isActive ? 'isActive' : undefined
+                return isActive ? 'isActive' : 'isNotActive'
             }}
             {...props}
         >

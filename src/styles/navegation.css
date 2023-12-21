@@ -4,6 +4,16 @@ nav a.isActive {
     line-height: 1;
 }
 
+nav a.isNotActive {
+    color: black;
+    font-size: 30px;
+    line-height: 1;
+}
+
+nav a{
+    transition: font-size 0.5s ease-in-out ;
+}
+
 .is-active {
     color: #0077B5;
 }
@@ -61,6 +71,6 @@ nav a.isActive {
     opacity: 1;
 }
 
-.logo:hover{
+.logo:hover {
     color: #0077B5;
 }
