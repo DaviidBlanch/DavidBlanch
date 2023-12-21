@@ -1,3 +1,18 @@
+/* Animacion del fondo del header */
+.bg-header {
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes enhance-header {
+    to {
+        background: rgba(255, 255, 255, .4);
+        backdrop-filter: blur(5px);
+    }
+}
+
+/* Animacion de la navegacion */
+
 nav a.isActive {
     color: #0077B5;
     font-size: 122px;
@@ -10,8 +25,8 @@ nav a.isNotActive {
     line-height: 1;
 }
 
-nav a{
-    transition: font-size 0.5s ease-in-out ;
+nav a {
+    transition: font-size 0.5s ease-in-out;
 }
 
 .is-active {
