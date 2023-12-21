@@ -20,7 +20,7 @@ export default function Skills() {
     }, [])
 
     return (
-        <div className="p-2 lg:pl-10">
+        <div className="p-2 pt-0 mb-20 lg:pl-10">
             {
                 skillData?.map(skill => (
                     <div key={skill.id} className="mb-3">

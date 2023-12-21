@@ -19,7 +19,7 @@ export default function Projects() {
     }, [])
 
     return (
-        <div className="p-3 grid gap-5 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-16">
+        <div className="p-3 grid gap-5 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-16 mb-20">
             {
                 project?.map((pro: ProjectItems) => (
                     <ProjectItem key={pro.id} {...pro} />

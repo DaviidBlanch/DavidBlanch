@@ -1,0 +1,7 @@
+footer a.isActive {
+    color: #0077B5;
+}
+
+footer a.isNotActive {
+    color: white;
+}
