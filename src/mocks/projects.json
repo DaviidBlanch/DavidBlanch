@@ -3,7 +3,7 @@
 	"projects": [
 		{
 			"id": 1,
-			"imagen": "dist/assets/devQ-lwd9o2Sd.webp",
+			"imagen": "src/assets/projectLogos/devQ.webp",
 			"nombre": "devQ",
 			"alt": "devQ logo",
 			"titulo": "devQ",
@@ -46,7 +46,7 @@
 		},
 		{
 			"id": 2,
-			"imagen": "dist/assets/4day-fYA8TlpY.webp",
+			"imagen": "src/assets/projectLogos/4day.webp",
 			"nombre": "4day",
 			"alt": "4day logo",
 			"titulo": "4day",
