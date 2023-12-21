@@ -5,6 +5,9 @@ import NodeBtn from './Buttons/NodeBtn'
 import ReactBtn from './Buttons/ReactBtn'
 import TailwindBtn from './Buttons/TailwindBtn'
 import TypeScriptBtn from './Buttons/TypeScriptBtn'
+import devQ from '../assets/projectLogos/devQ.webp'
+import forday from '../assets/projectLogos/4day.webp'
+
 
 export default function Projects() {
 
@@ -16,7 +19,7 @@ export default function Projects() {
                 >
                     <picture>
                         <img
-                            src="src\assets\projectLogos\devQ.webp"
+                            src={devQ}
                             alt="devQ logo"
                             className="image z-10 rounded-lg"
                         />
@@ -38,7 +41,7 @@ export default function Projects() {
                 >
                     <picture>
                         <img
-                            src="src\assets\projectLogos\4day.webp"
+                            src={forday}
                             alt="4day logo"
                             className="image z-10 rounded-lg"
                         />
