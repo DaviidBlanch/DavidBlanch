@@ -3,7 +3,7 @@ import '../styles/experiences.css'
 
 export default function Experiences() {
     return (
-        <div className="p-2 pl-10">
+        <div className="p-2 lg:pl-10">
             <div className='flex'>
                 <a
                     href='https://www.capgemini.com/es-es/'

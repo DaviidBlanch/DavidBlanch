@@ -15,7 +15,7 @@ export default function HomePage() {
                     <Route path="/skills" element={<Skills />} />
                 </Routes>
             </section>
-            <section className="flex items-center justify-center z-10">
+            <section className="lg:flex items-center justify-center z-10 hidden">
                 <Navegation />
             </section>
         </div>
