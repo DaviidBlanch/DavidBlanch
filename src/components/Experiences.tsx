@@ -11,7 +11,7 @@ export default function Experiences() {
                     rel='noreferrer'
                     className='flex items-center'
                 >
-                    <span className='underline-animation'>Capgemini</span>
+                    <h1 className='underline-animation'>Capgemini</h1>
                     <img
                         src={CapgeminiLogo}
                         alt='Capgemini logo'
@@ -22,7 +22,7 @@ export default function Experiences() {
             <ol className="relative border-s border-black ml-2">
                 <li className="mb-5 ms-4">
                     <div className="pulser absolute w-3 h-3 bg-[#0077B5] rounded-full mt-1.5 -start-1.5 border"></div>
-                    <h3 className="text-lg text-black">JUNIOR SOFTWARE ENGINEER</h3>
+                    <h2 className="text-lg text-black">JUNIOR SOFTWARE ENGINEER</h2>
                     <time className="mb-1 font-serif text-sm leading-none text-gray-600">march 2023 - present · 10 months</time>
                     <p className="text-base font-sans text-black">•Incident management and Small Works/Tasks in Aarhus, Denmark <span className='font-semibold'>(React, TypeScript)</span>.</p>
                     <p className="text-base font-sans text-black">•Internal project development <span className='font-semibold'>(Angular, GitLab)</span> .</p>

@@ -37,8 +37,7 @@ export default function ProjectItem(pro: ProjectItems) {
                     ))}
                 </div>
             </div>
-            <span className="text-base font-medium font-sans ml-[10px]">{pro.titulo} - {pro.descriptionAbrev}</span>
-
+            <h1 className="text-base font-medium font-sans ml-[10px]">{pro.titulo} - {pro.descriptionAbrev}</h1>
         </div>
     )
 }

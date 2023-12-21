@@ -9,8 +9,8 @@ export default function Header() {
         <>
             <header className="bg-header py-3 px-10 flex items-center fixed top-0 w-full justify-between z-30">
                 <div className="flex flex-grow basis-0 lg:text-2xl md:text-2xl sm:text-2xl">
-                    <NavL to="/" className="logo-container">
-                        <span className="px-1 logo font-bold">DAVID BLANCH</span>
+                    <NavL to="/" className="logo-container flex">
+                        <h1 className="px-1 logo font-bold">DAVID BLANCH</h1>
                     </NavL>
                 </div>
                 <nav className="flex flex-grow justify-center">
@@ -40,7 +40,7 @@ export default function Header() {
                     </ul>
                 </nav>
             </header>
-            <Footer/>
+            <Footer />
         </>
     )
 }
