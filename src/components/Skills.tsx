@@ -1,3 +1,4 @@
+import { ReactIcon, TypeScript } from '../assets/frameworks-logos/Icons'
 import '../styles/skills.css'
 
 // const URL_SKILLS = "https://run.mocky.io/v3/dffcd1d1-668d-4d03-957d-7f9140706cd8"
@@ -37,7 +38,7 @@ export default function Skills() {
 
             <div className="mb-3">
                 <div className="flex justify-between mb-1">
-                    <img src="src/assets/frameworks-logos/React.svg" alt="ReactJs logo" />
+                    <ReactIcon />
                     <span className={`text-sm font-medium`} style={{ color: "#087EA4" }}>70%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -49,7 +50,7 @@ export default function Skills() {
             </div>
             <div className="mb-3">
                 <div className="flex justify-between mb-1">
-                    <img src="src/assets/frameworks-logos/TypeScript.svg" alt="TypeScript logo" />
+                    <TypeScript />
                     <span className={`text-sm font-medium`} style={{ color: "#3178c6" }}>70%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
