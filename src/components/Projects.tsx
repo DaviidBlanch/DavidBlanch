@@ -14,25 +14,31 @@ export default function Projects() {
     return (
         <div className="p-3 grid gap-5 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-16 mb-20">
             <div>
-                <div
-                    className="image-container rounded-lg shadow-lg shadow-zinc-600"
+                <a
+                    href='https://devq.vercel.app/'
+                    target="_blank"
+                    rel="noreferrer"
                 >
-                    <picture>
-                        <img
-                            src={devQ}
-                            alt="devQ logo"
-                            className="image z-10 rounded-lg"
-                        />
-                    </picture>
-                    <div className="overlay p-2 grid grid-cols-3 content-end">
-                        <ReactBtn />
-                        <TypeScriptBtn />
-                        <TailwindBtn />
-                        <NodeBtn />
-                        <ExpressBtn />
-                        <MongoBtn />
+                    <div
+                        className="image-container rounded-lg shadow-lg shadow-zinc-600"
+                    >
+                        <picture>
+                            <img
+                                src={devQ}
+                                alt="devQ logo"
+                                className="image z-10 rounded-lg"
+                            />
+                        </picture>
+                        <div className="overlay p-2 grid grid-cols-3 content-end">
+                            <ReactBtn />
+                            <TypeScriptBtn />
+                            <TailwindBtn />
+                            <NodeBtn />
+                            <ExpressBtn />
+                            <MongoBtn />
+                        </div>
                     </div>
-                </div>
+                </a>
                 <h1 className="text-base font-medium font-sans ml-[10px]">devQ - Developer Interview Platform</h1>
             </div>
             <div>
